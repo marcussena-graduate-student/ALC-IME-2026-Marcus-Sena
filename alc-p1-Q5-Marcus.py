@@ -111,10 +111,13 @@ def resolve_lu(A, b):
 
 if __name__ == "__main__":
     # Exemplo de uso
-    A = [[2, 1, 1],
-         [4, -6, 0],
-         [-2, 7, 2]]
-    b = [5, -2, 9]
+    A = numpy.array([[2, 1, 1],
+                     [4, -6, 0],
+                     [-2, 7, 2]], dtype=float)
+    b = numpy.array([5, -2, 9], dtype=float)
+
+    print("A =\n", A)
+    print("b =", b)
 
     L, U, x = resolve_lu(A, b)
     print("L =\n", L)
